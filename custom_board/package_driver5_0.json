@@ -1,0 +1,60 @@
+{
+    "packages":
+    [
+      {
+        "name": "driver5_0",
+        "maintainer": "Ynvisible",
+        "websiteURL": "https://ynvisible.com",
+        "email" : "",   
+        "platforms":
+        [
+          {
+            "name": "Driver 5.0 board",
+            "architecture": "samd",
+            "version": "0.0.1",
+            "category": "Contributed",
+            "url": "",
+            "archiveFileName": "",
+            "checksum": "",
+            "size": "",
+            "boards": [
+              {
+                "name": "Driver 5.0"
+              }
+            ],
+            "toolsDependencies":
+            [
+              {
+                "packager": "arduino",
+                "name": "arm-none-eabi-gcc",
+                "version": "7-2017q4"
+              },
+              {
+                "packager": "arduino",
+                "name": "bossac",
+                "version": "1.8.0-48-gb176eee"
+              },
+              {
+                "packager": "arduino",
+                "name": "openocd",
+                "version": "0.10.0-arduino9"
+              },
+              {
+                "packager": "arduino",
+                "name": "CMSIS",
+                "version": "4.5.0"
+              },
+              {
+                "packager": "arduino",
+                "name": "CMSIS-Atmel",
+                "version": "1.2.0"
+              }
+            ]
+          }
+        ],
+        "tools":
+        [
+        ]
+      }
+    ]
+  }
