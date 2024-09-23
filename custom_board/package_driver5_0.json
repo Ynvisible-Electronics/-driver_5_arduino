@@ -13,10 +13,10 @@
             "architecture": "samd",
             "version": "0.0.1",
             "category": "Contributed",
-            "url": "",
-            "archiveFileName": "",
-            "checksum": "",
-            "size": "",
+            "url": "https://github.com/Ynvisible-Electronics/driver_5_arduino/raw/refs/heads/main/custom_board/Driver_5.0-0.0.1.zip",
+            "archiveFileName": "Driver_5.0-0.0.1.zip",
+            "checksum": "SHA-256:2BB2933AC5EFCE5DA0D6DFA6A3D12DC2E368030763CF727D8FD8C71F3048E504",
+            "size": "1523562",
             "boards": [
               {
                 "name": "Driver 5.0"
