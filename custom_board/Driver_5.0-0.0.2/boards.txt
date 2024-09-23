@@ -14,9 +14,9 @@
 # License along with this library; if not, write to the Free Software
 # Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 
-# SAMD Driver 5.0
+# Ynvisible Driver 5.0
 # ---------------
-driver_5_0.name=Driver 5.0
+driver_5_0.name=Ynvisible Driver 5.0
 driver_5_0.vid.0=0x2341
 driver_5_0.pid.0=0x804f
 driver_5_0.vid.1=0x2341
@@ -38,7 +38,7 @@ driver_5_0.upload.wait_for_upload_port=true
 driver_5_0.upload.native_usb=true
 driver_5_0.build.mcu=cortex-m0plus
 driver_5_0.build.f_cpu=48000000L
-driver_5_0.build.usb_product="Arduino Driver_5_0"
+driver_5_0.build.usb_product="Ynvisible Driver_5_0"
 driver_5_0.build.usb_manufacturer="Arduino LLC"
 driver_5_0.build.board=DRIVER_5_0
 driver_5_0.build.core=arduino

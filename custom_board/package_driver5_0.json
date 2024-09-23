@@ -9,17 +9,17 @@
         "platforms":
         [
           {
-            "name": "Driver 5.0 board",
+            "name": "Ynvisible Driver 5.0",
             "architecture": "samd",
-            "version": "0.0.1",
+            "version": "0.0.2",
             "category": "Contributed",
-            "url": "https://github.com/Ynvisible-Electronics/driver_5_arduino/raw/refs/heads/main/custom_board/Driver_5.0-0.0.1.zip",
-            "archiveFileName": "Driver_5.0-0.0.1.zip",
-            "checksum": "SHA-256:2BB2933AC5EFCE5DA0D6DFA6A3D12DC2E368030763CF727D8FD8C71F3048E504",
-            "size": "1523562",
+            "url": "https://github.com/Ynvisible-Electronics/driver_5_arduino/raw/refs/heads/main/custom_board/Driver_5.0-0.0.2.zip",
+            "archiveFileName": "Driver_5.0-0.0.2.zip",
+            "checksum": "SHA-256:B9BED54ACEF48518BE8D4832235A2C8F586E63F4BFE8D15E1842BA020E3E7821",
+            "size": "1526108",
             "boards": [
               {
-                "name": "Driver 5.0"
+                "name": "Ynvisible Driver 5.0"
               }
             ],
             "toolsDependencies":
