@@ -176,8 +176,8 @@ const PinDescription g_APinDescription[] = {
 */
   { PORTA,  3, PIO_DIGITAL, (PIN_ATTR_DIGITAL                                ), No_ADC_Channel, NOT_ON_PWM, NOT_ON_TIMER, EXTERNAL_INT_NONE }, // DAC/VREFP
   
-  { PORTA,  0, PIO_DIGITAL,    (PIN_ATTR_NONE                                ), No_ADC_Channel, NOT_ON_PWM, NOT_ON_TIMER, EXTERNAL_INT_NONE },
-  { PORTA,  1, PIO_DIGITAL,    (PIN_ATTR_NONE                                ), No_ADC_Channel, NOT_ON_PWM, NOT_ON_TIMER, EXTERNAL_INT_NONE },
+  { PORTA,  0, PIO_DIGITAL, (PIN_ATTR_NONE                                   ), No_ADC_Channel, NOT_ON_PWM, NOT_ON_TIMER, EXTERNAL_INT_NONE },
+  { PORTA,  1, PIO_DIGITAL, (PIN_ATTR_NONE                                   ), No_ADC_Channel, NOT_ON_PWM, NOT_ON_TIMER, EXTERNAL_INT_NONE },
 
 };
 
@@ -187,21 +187,22 @@ extern "C" {
     }
 }
 
-const void* g_apTCInstances[TCC_INST_NUM + TC_INST_NUM]={ TCC0, TCC1, TCC2, TC3, TC4, TC5 };
+const void* g_apTCInstances[TCC_INST_NUM + TC_INST_NUM]={ TC3, TC4, TC5, TC6 };
 
 // Multi-serial objects instantiation
 SERCOM sercom0(SERCOM0);
 SERCOM sercom1(SERCOM1);
-SERCOM sercom2(SERCOM2);
+//SERCOM sercom2(SERCOM2);
 SERCOM sercom3(SERCOM3);
 SERCOM sercom4(SERCOM4);
 SERCOM sercom5(SERCOM5);
 
 // Serial1
-Uart Serial1(&sercom5, PIN_SERIAL1_RX, PIN_SERIAL1_TX, PAD_SERIAL1_RX, PAD_SERIAL1_TX);
+//Uart Serial1(&sercom5, PIN_SERIAL1_RX, PIN_SERIAL1_TX, PAD_SERIAL1_RX, PAD_SERIAL1_TX);
 
-void SERCOM5_Handler()
-{
-  Serial1.IrqHandler();
-}
+
+// void SERCOM5_Handler()
+// {
+//   Serial1.IrqHandler();
+// }
 
