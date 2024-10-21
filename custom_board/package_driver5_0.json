@@ -2,14 +2,14 @@
     "packages":
     [
       {
-        "name": "driver5_0",
+        "name": "driver_v5",
         "maintainer": "Ynvisible",
         "websiteURL": "https://ynvisible.com",
-        "email" : "",   
+        "email" : "",
         "platforms":
         [
           {
-            "name": "Ynvisible Driver 5.0",
+            "name": "Ynvisible Driver v5",
             "architecture": "samd",
             "version": "0.0.3",
             "category": "Contributed",
@@ -19,7 +19,7 @@
             "size": "1526108",
             "boards": [
               {
-                "name": "Ynvisible Driver 5.0"
+                "name": "Ynvisible Driver v5"
               }
             ],
             "toolsDependencies":

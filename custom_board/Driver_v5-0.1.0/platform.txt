@@ -19,7 +19,7 @@
 # For more info:
 # https://github.com/arduino/Arduino/wiki/Arduino-IDE-1.5---3rd-party-Hardware-specification
 
-name=Driver 5.0 - Ynvisible
+name=Driver v5 - Ynvisible
 version=0.0.2
 
 # Compile variables

@@ -1,20 +1,26 @@
-# Arduino Custom Board for Driver 5.0
+# Arduino Custom Board for Driver v5.x
 
 ## Installation
 
-To install the Driver 5.0 custom board:
+To install the Driver v5 custom board:
 
 - Open ArduinoIDE
-- Go to File > Preferences
-- Add the following url to the "Additional boards manager URLs:" text box: https://raw.githubusercontent.com/Ynvisible-Electronics/driver_5_arduino/refs/heads/main/custom_board/package_driver5_0.json
-- Press the "OK" button
-- Open the board manager: CTRL+SHIFT+B or Tools > Board > Boards Manager...
-- In the search tab write: "Ynvisible Driver 5.0"
+- Open the `File > Preferences` menu
+- In the `Additional boards manager URLs:` text box add the link `https://raw.githubusercontent.com/Ynvisible-Electronics/driver_5_arduino/refs/heads/main/custom_board/package_driver_v5.json`
+- Press the `OK` button
+- Open the board manager by pressing `CTRL+SHIFT+B` or opening the `Tools > Board > Boards Manager...` menu
+- In the board manager search write `Ynvisible Driver v5`
 - Select the latest version
 - Click Install
+- That's it! You're now ready to use the Driver v5 to test our displays! 🎉
 
 
 ## Change Log
+
+### v0.1.0
+
+* Update references, definitions, files, folders, etc from Driver 5.0 to more generic "Driver_v5"
+* Implement all pins for Driver v5.1 PCB pinout
 
 ### v0.0.3
 
