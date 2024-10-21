@@ -41,8 +41,8 @@
 extern "C" unsigned int PINCOUNT_fn();
 #endif
 #define PINS_COUNT           (PINCOUNT_fn())
-#define NUM_DIGITAL_PINS     (15u)
-#define NUM_ANALOG_INPUTS    (7u)
+#define NUM_DIGITAL_PINS     (19u)
+#define NUM_ANALOG_INPUTS    (16u)
 #define NUM_ANALOG_OUTPUTS   (1u)
 
 // Low-level pin register query macros
@@ -65,96 +65,131 @@ extern "C" unsigned int PINCOUNT_fn();
 // #define digitalPinToTimer(P)
 
 //Battery
-#define ADC_BATTERY	(33u)
+#define ADC_BATTERY	(36u)
+
+
+// Digital Pins
+// ------------
+#define PIN_D0      (00u)
+#define PIN_D1      (01u)
+#define PIN_D2      (02u)
+#define PIN_D3      (03u)
+#define PIN_D4      (04u)
+#define PIN_D5      (05u)
 
 // LEDs
-// ----
-#define PIN_LED     (32u)
-#define LED_BUILTIN PIN_LED
+#define PIN_LED_1     (06u)
+#define PIN_LED_2     (07u)
+#define PIN_LED_3     (08u)
+#define PIN_LED_4     (09u)
+#define PIN_LED_5     (10u)
+#define PIN_LED_6     (11u)
+#define PIN_LED_7     (12u)
+
+#define PIN_LED_R     (13u)
+#define PIN_LED_G     (14u)
+#define PIN_LED_B     (15u)
+
+#define LED_BUILTIN PIN_LED_R
+
+static const uint8_t LED_1 = PIN_LED_1;
+static const uint8_t LED_2 = PIN_LED_2;
+static const uint8_t LED_3 = PIN_LED_3;
+static const uint8_t LED_4 = PIN_LED_4;
+static const uint8_t LED_5 = PIN_LED_5;
+static const uint8_t LED_6 = PIN_LED_6;
+static const uint8_t LED_7 = PIN_LED_7;
+
+static const uint8_t LED_R = PIN_LED_R;
+static const uint8_t LED_G = PIN_LED_G;
+static const uint8_t LED_B = PIN_LED_B;
+
+// Buttons
+#define PIN_BTN_DOWN  (16u)
+#define PIN_BTN_START (17u)
+#define PIN_BTN_UP    (18u)
+
+static const uint8_t  BTN_DOWN  = PIN_BTN_DOWN;
+static const uint8_t  BTN_START = PIN_BTN_START;
+static const uint8_t  BTN_UP    = PIN_BTN_UP;
+
+// MCU Power On
+#define PIN_MCU_PWR_ON (19u)
+
+static const uint8_t MCU_PWR_ON = PIN_MCU_PWR_ON;
 
 // Analog pins
 // -----------
-#define PIN_A0 (15u)
-#define PIN_A1 (16u)
-#define PIN_A2 (17u)
-#define PIN_A3 (18u)
-#define PIN_A4 (19u)
-#define PIN_A5 (20u)
-#define PIN_A6 (21u)
-static const uint8_t A0  = PIN_A0;
-static const uint8_t A1  = PIN_A1;
-static const uint8_t A2  = PIN_A2;
-static const uint8_t A3  = PIN_A3;
-static const uint8_t A4  = PIN_A4;
-static const uint8_t A5  = PIN_A5;
-static const uint8_t A6  = PIN_A6;
-#define ADC_RESOLUTION 12
+#define PIN_CE        (20u)
+#define PIN_SEG_1     (21u)
+#define PIN_SEG_2     (22u)
+#define PIN_SEG_3     (23u)
+#define PIN_SEG_4     (24u)
+#define PIN_SEG_5     (25u)
+#define PIN_SEG_6     (26u)
+#define PIN_SEG_7     (27u)
+#define PIN_SEG_8     (28u)
+#define PIN_SEG_9     (29u)
+#define PIN_SEG_10    (30u)
+#define PIN_SEG_11    (31u)
+#define PIN_SEG_12    (32u)
+#define PIN_SEG_13    (33u)
+#define PIN_SEG_14    (34u)
+#define PIN_SEG_15    (35u)
+
+#define PIN_LIPO_MON  (36u)
+
+static const uint8_t SEG_1  = PIN_SEG_1;
+static const uint8_t SEG_2  = PIN_SEG_2;
+static const uint8_t SEG_3  = PIN_SEG_3;
+static const uint8_t SEG_4  = PIN_SEG_4;
+static const uint8_t SEG_5  = PIN_SEG_5;
+static const uint8_t SEG_6  = PIN_SEG_6;
+static const uint8_t SEG_7  = PIN_SEG_7;
+static const uint8_t SEG_8  = PIN_SEG_8;
+static const uint8_t SEG_9  = PIN_SEG_9;
+static const uint8_t SEG_10 = PIN_SEG_10;
+static const uint8_t SEG_11 = PIN_SEG_11;
+static const uint8_t SEG_12 = PIN_SEG_12;
+static const uint8_t SEG_13 = PIN_SEG_13;
+static const uint8_t SEG_14 = PIN_SEG_14;
+static const uint8_t SEG_15 = PIN_SEG_15;
+
+#define ADC_RESOLUTION 10
 
 // SPI Interfaces
 // --------------
-#define SPI_INTERFACES_COUNT 2
- 
-// SPI
-#define PIN_SPI_MISO  (10u)
-#define PIN_SPI_MOSI  (8u)
-#define PIN_SPI_SCK   (9u)
-#define PIN_SPI_SS    (4u)
-#define PERIPH_SPI    sercom1
-#define PAD_SPI_TX    SPI_PAD_0_SCK_1
-#define PAD_SPI_RX    SERCOM_RX_PAD_3
-
-static const uint8_t SS   = PIN_SPI_SS;   // SPI Slave SS not used. Set here only for reference.
-static const uint8_t MOSI = PIN_SPI_MOSI;
-static const uint8_t MISO = PIN_SPI_MISO;
-static const uint8_t SCK  = PIN_SPI_SCK;
-
-// SPI1: Connected to SD
-#define PIN_SPI1_MISO (29u)
-#define PIN_SPI1_MOSI (26u)
-#define PIN_SPI1_SCK  (27u)
-#define PIN_SPI1_SS   (28u)
-#define PERIPH_SPI1   sercom4
-#define PAD_SPI1_TX   SPI_PAD_0_SCK_1
-#define PAD_SPI1_RX   SERCOM_RX_PAD_3
-static const uint8_t SS1   = PIN_SPI1_SS;
-static const uint8_t MOSI1 = PIN_SPI1_MOSI;
-static const uint8_t MISO1 = PIN_SPI1_MISO;
-static const uint8_t SCK1  = PIN_SPI1_SCK;
-
-// Needed for SD library
-#define SDCARD_SPI      SPI1
-#define SDCARD_MISO_PIN PIN_SPI1_MISO
-#define SDCARD_MOSI_PIN PIN_SPI1_MOSI
-#define SDCARD_SCK_PIN  PIN_SPI1_SCK
-#define SDCARD_SS_PIN   PIN_SPI1_SS
+#define SPI_INTERFACES_COUNT 0
 
 // Wire Interfaces
 // ---------------
-#define WIRE_INTERFACES_COUNT 1
+#define WIRE_INTERFACES_COUNT 2
 
-// Wire
-#define PIN_WIRE_SDA        (11u)
-#define PIN_WIRE_SCL        (12u)
-#define PERIPH_WIRE         sercom2
-#define WIRE_IT_HANDLER     SERCOM2_Handler
-static const uint8_t SDA = PIN_WIRE_SDA;
-static const uint8_t SCL = PIN_WIRE_SCL;
+// Wire - Quick connector
+#define PIN_WIRE_Q_SDA      (37u)
+#define PIN_WIRE_Q_SCL      (38u)
+#define PERIPH_WIRE         sercom4
+#define WIRE_IT_HANDLER     SERCOM4_Handler
+
+static const uint8_t Q_SDA = PIN_WIRE_Q_SDA;
+static const uint8_t Q_SCL = PIN_WIRE_Q_SCL;
+
+// Wire - Matrix connector
+#define PIN_WIRE_M_SDA      (39u)
+#define PIN_WIRE_M_SCL      (40u)
+#define PIN_M_SHDN          (41u)
+#define PERIPH_WIRE         sercom1
+#define WIRE_IT_HANDLER     SERCOM1_Handler
+
+static const uint8_t M_SDA = PIN_WIRE_M_SDA;
+static const uint8_t M_SCL = PIN_WIRE_M_SCL;
+static const uint8_t M_SHDN = PIN_M_SHDN;
 
 // USB
 // ---
-#define PIN_USB_DM          (22ul)
-#define PIN_USB_DP          (23ul)
-#define PIN_USB_HOST_ENABLE (24ul)
-
-// I2S Interfaces
-// --------------
-#define I2S_INTERFACES_COUNT 1
-
-#define I2S_DEVICE          0
-#define I2S_CLOCK_GENERATOR 3
-#define PIN_I2S_SD          (PIN_A6)
-#define PIN_I2S_SCK         (2u)
-#define PIN_I2S_FS          (3u)
+#define PIN_USB_DM          (44ul)
+#define PIN_USB_DP          (45ul)
+//#define PIN_USB_HOST_ENABLE (ul)
 
 // Serial ports
 // ------------
@@ -165,17 +200,17 @@ static const uint8_t SCL = PIN_WIRE_SCL;
 // Instances of SERCOM
 extern SERCOM sercom0;
 extern SERCOM sercom1;
-extern SERCOM sercom2;
-extern SERCOM sercom3;
+//extern SERCOM sercom2;    // Not used, pins taken by other functions
+//extern SERCOM sercom3;
 extern SERCOM sercom4;
-extern SERCOM sercom5;
+//extern SERCOM sercom5;
 
 // Serial1
-extern Uart Serial1;
-#define PIN_SERIAL1_RX (13ul)
-#define PIN_SERIAL1_TX (14ul)
-#define PAD_SERIAL1_TX (UART_TX_PAD_2)
+extern Uart Serial;
+#define PIN_SERIAL1_RX (43ul)
+#define PIN_SERIAL1_TX (42ul)
 #define PAD_SERIAL1_RX (SERCOM_RX_PAD_3)
+#define PAD_SERIAL1_TX (UART_TX_PAD_2)
 #endif // __cplusplus
 
 #ifdef __cplusplus
