@@ -20,7 +20,6 @@
 
 // The definitions here needs a SAMD core >=1.6.10
 #define ARDUINO_SAMD_VARIANT_COMPLIANCE 10610
-#define __SAMD21J18A__
 
 #include <WVariant.h>
 
@@ -139,6 +138,9 @@ static const uint8_t MCU_PWR_ON = PIN_MCU_PWR_ON;
 
 #define PIN_LIPO_MON  (36u)
 
+static const uint8_t A0 = PIN_CE;         // This needs to exist for analogRead() to work @wiring_analog.c:l132
+
+static const uint8_t CE     = PIN_CE;
 static const uint8_t SEG_1  = PIN_SEG_1;
 static const uint8_t SEG_2  = PIN_SEG_2;
 static const uint8_t SEG_3  = PIN_SEG_3;
