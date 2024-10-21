@@ -70,18 +70,18 @@ extern "C" unsigned int PINCOUNT_fn();
 
 // Digital Pins
 // ------------
-#define PIN_D0      (00u)
-#define PIN_D1      (01u)
-#define PIN_D2      (02u)
-#define PIN_D3      (03u)
-#define PIN_D4      (04u)
-#define PIN_D5      (05u)
+#define PIN_D0      (0u)
+#define PIN_D1      (1u)
+#define PIN_D2      (2u)
+#define PIN_D3      (3u)
+#define PIN_D4      (4u)
+#define PIN_D5      (5u)
 
 // LEDs
-#define PIN_LED_1     (06u)
-#define PIN_LED_2     (07u)
-#define PIN_LED_3     (08u)
-#define PIN_LED_4     (09u)
+#define PIN_LED_1     (6u)
+#define PIN_LED_2     (7u)
+#define PIN_LED_3     (8u)
+#define PIN_LED_4     (9u)
 #define PIN_LED_5     (10u)
 #define PIN_LED_6     (11u)
 #define PIN_LED_7     (12u)
@@ -168,8 +168,8 @@ static const uint8_t SEG_15 = PIN_SEG_15;
 // Wire - Quick connector
 #define PIN_WIRE_Q_SDA      (37u)
 #define PIN_WIRE_Q_SCL      (38u)
-#define PERIPH_WIRE         sercom4
-#define WIRE_IT_HANDLER     SERCOM4_Handler
+#define PERIPH_WIRE_Q       sercom4
+#define WIRE_Q_IT_HANDLER   SERCOM4_Handler
 
 static const uint8_t Q_SDA = PIN_WIRE_Q_SDA;
 static const uint8_t Q_SCL = PIN_WIRE_Q_SCL;
@@ -178,8 +178,8 @@ static const uint8_t Q_SCL = PIN_WIRE_Q_SCL;
 #define PIN_WIRE_M_SDA      (39u)
 #define PIN_WIRE_M_SCL      (40u)
 #define PIN_M_SHDN          (41u)
-#define PERIPH_WIRE         sercom1
-#define WIRE_IT_HANDLER     SERCOM1_Handler
+#define PERIPH_WIRE_M       sercom1
+#define WIRE_M_IT_HANDLER   SERCOM1_Handler
 
 static const uint8_t M_SDA = PIN_WIRE_M_SDA;
 static const uint8_t M_SCL = PIN_WIRE_M_SCL;
