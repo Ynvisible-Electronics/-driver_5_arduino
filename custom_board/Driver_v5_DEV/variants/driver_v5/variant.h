@@ -167,25 +167,26 @@ static const uint8_t SEG_15 = PIN_SEG_15;
 // ---------------
 #define WIRE_INTERFACES_COUNT 2
 
-// Wire - Quick connector
-#define PIN_WIRE_SDA      (37u)
-#define PIN_WIRE_SCL      (38u)
-#define PERIPH_WIRE       sercom4
-#define WIRE_IT_HANDLER   SERCOM4_Handler
+
+// Wire - Matrix connector
+#define PIN_WIRE_SDA        (39u)
+#define PIN_WIRE_SCL        (40u)
+#define PIN_M_SHDN          (41u)
+#define PERIPH_WIRE         sercom1
+#define WIRE_IT_HANDLER     SERCOM1_Handler
 
 static const uint8_t SDA = PIN_WIRE_SDA;
 static const uint8_t SCL = PIN_WIRE_SCL;
-
-// Wire - Matrix connector
-#define PIN_WIRE1_SDA      (39u)
-#define PIN_WIRE1_SCL      (40u)
-#define PIN_M_SHDN         (41u)
-#define PERIPH_WIRE1       sercom1
-#define WIRE1_IT_HANDLER   SERCOM1_Handler
-
-static const uint8_t SDA1 = PIN_WIRE1_SDA;
-static const uint8_t SCL1 = PIN_WIRE1_SCL;
 static const uint8_t M_SHDN = PIN_M_SHDN;
+
+// Wire - Quick connector
+#define PIN_WIRE1_SDA       (37u)
+#define PIN_WIRE1_SCL       (38u)
+#define PERIPH_WIRE1        sercom4
+#define WIRE1_IT_HANDLER    SERCOM4_Handler
+
+static const uint8_t SDA1 = PIN_WIRE_SDA;
+static const uint8_t SCL1 = PIN_WIRE_SCL;
 
 // USB
 // ---
