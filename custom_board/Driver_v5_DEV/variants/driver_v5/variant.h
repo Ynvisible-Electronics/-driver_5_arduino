@@ -185,8 +185,8 @@ static const uint8_t M_SHDN = PIN_M_SHDN;
 #define PERIPH_WIRE1        sercom4
 #define WIRE1_IT_HANDLER    SERCOM4_Handler
 
-static const uint8_t SDA1 = PIN_WIRE_SDA;
-static const uint8_t SCL1 = PIN_WIRE_SCL;
+static const uint8_t SDA1 = PIN_WIRE1_SDA;
+static const uint8_t SCL1 = PIN_WIRE1_SCL;
 
 // USB
 // ---
