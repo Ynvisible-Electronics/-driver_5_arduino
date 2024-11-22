@@ -11,12 +11,12 @@
           {
             "name": "Ynvisible Driver v5",
             "architecture": "samd",
-            "version": "0.1.1",
+            "version": "0.1.2",
             "category": "Contributed",
-            "url": "https://github.com/Ynvisible-Electronics/Driver-v5-Board/raw/refs/heads/main/custom_board/Driver_v5-0.1.1.zip",
-            "archiveFileName": "Driver_v5-0.1.1.zip",
-            "checksum": "SHA-256:FDD1F73437B4EAAA74E990F4C051348F0AFFCAD98DD2A69F4BBA4870A4A175FC",
-            "size": "1524700",
+            "url": "https://github.com/Ynvisible-Electronics/Driver-v5-Board/raw/refs/heads/main/custom_board/Driver_v5-0.1.2.zip",
+            "archiveFileName": "Driver_v5-0.1.2.zip",
+            "checksum": "SHA-256:EB8F5ADD299FB5E746CC945EB2173DCD46513D90750B3518B9391E7A975DFCBD",
+            "size": "1524704",
             "boards": [
               {
                 "name": "Ynvisible Driver v5"

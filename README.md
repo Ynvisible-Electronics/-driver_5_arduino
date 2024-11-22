@@ -16,6 +16,14 @@ To install the Driver v5 custom board:
 
 ## Change Log
 
+### v0.1.2
+
+* Fix SDA1 and SCL1 pin attribution
+
+### v0.1.1
+
+* Update WIRE and WIRE1 pin attributions
+
 ### v0.1.0
 
 * Update references, definitions, files, folders, etc from Driver 5.0 to more generic "Driver_v5"
