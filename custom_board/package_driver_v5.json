@@ -11,7 +11,7 @@
           {
             "name": "Ynvisible Driver v5",
             "architecture": "samd",
-            "version": "0.1.2",
+            "version": "0.1.3",
             "category": "Contributed",
             "url": "https://github.com/Ynvisible-Electronics/Driver-v5-Board/raw/refs/heads/main/custom_board/Driver_v5-0.1.3.zip",
             "archiveFileName": "Driver_v5-0.1.3.zip",
