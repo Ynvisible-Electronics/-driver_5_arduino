@@ -16,6 +16,10 @@ To install the Driver v5 custom board:
 
 ## Change Log
 
+### v0.1.3
+
+* More pin attribution fixes for WIRE1
+
 ### v0.1.2
 
 * Fix SDA1 and SCL1 pin attribution
