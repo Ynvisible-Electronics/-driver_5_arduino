@@ -1,0 +1,9 @@
+ - In '/Driver-v5-Board/custom_board/Driver_v5_DEV/platform.txt', update to 'version=x.y.z'
+ - Zip '/Driver-v5-Board/custom_board/Driver_v5_DEV/'
+ - Rename 'Driver_v5_DEV.zip' to 'Driver_v5-x.y.z.zip'x
+ - In '/Driver-v5-Board/custom_board/package_driver_v5.json':
+   - Update "url" with version x.y.z
+   - Update "archiveFileName" with version x.y.z
+   - Update "checksum" with 'Driver_v5-x.y.z.zip' SHA-256 checksum
+   - Update "size" with 'Driver_v5-x.y.z.zip' size in bytes
+ - Update Change Log with version x.y.z
