@@ -15,6 +15,9 @@ To install the Driver v5 custom board:
 - That's it! You're now ready to use the Driver v5 to test our displays! 🎉
 
 ## Change Log
+### v0.1.4
+
+* Update SERCOM pins
 
 ### v0.1.3
 
