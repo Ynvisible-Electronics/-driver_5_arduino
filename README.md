@@ -15,6 +15,12 @@ To install the Driver v5 custom board:
 - That's it! You're now ready to use the Driver v5 to test our displays! 🎉
 
 ## Change Log
+
+### v1.0.0
+
+- Oficial tested working version
+- Compatible with ECD Arduino Library v1.x.y
+
 ### v0.1.4
 
 * Update SERCOM pins
