@@ -19,6 +19,7 @@ To install the Driver v5 custom board:
 ### v1.0.0
 
 - Oficial tested working version
+- Add custom PID (for Microchip VID)
 - Compatible with ECD Arduino Library v1.x.y
 
 ### v0.1.4
