@@ -15,8 +15,8 @@
             "category": "Contributed",
             "url": "https://github.com/Ynvisible-Electronics/Driver-v5-Board/raw/refs/heads/main/custom_board/Driver_v5-1.0.0.zip",
             "archiveFileName": "Driver_v5-1.0.0.zip",
-            "checksum": "SHA-256:0F7F6337818922A91589CBD383696FECFCF14C57B0D771E3AB6417D281053994",
-            "size": "1490456",
+            "checksum": "SHA-256:76B864EBA5889D3C3B4207A44BA53817235527CCFE27B8E7937170ED18FEA604",
+            "size": "1490439",
             "boards": [
               {
                 "name": "Ynvisible Driver v5"
